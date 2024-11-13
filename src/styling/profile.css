@@ -1,0 +1,58 @@
+/* Profile Card Container */
+.profile-card {
+    width: 180px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Profile Details */
+.profile-details h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.profile-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.25rem 0;
+}
+
+.profile-languages, .profile-location {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 0.25rem 0;
+}
+
+/* Availability Button */
+.availability-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #e6f3ff;
+    color: #007bff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.availability-button:hover {
+    background-color: #d0e9ff;
+}
