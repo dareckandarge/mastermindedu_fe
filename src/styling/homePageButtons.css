@@ -1,0 +1,20 @@
+.home-page-button {
+    display: inline-block;
+    background-color: white; /* Button background */
+    color: #244b8a; /* Deep blue text */
+    border: 2px solid #244b8a; /* Deep blue border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 20px; /* Spacing inside the button */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-decoration: none; /* Remove underline for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect */
+.home-page-button:hover {
+    background-color: #244b8a; /* Deep blue background on hover */
+    color: white; /* White text on hover */
+}

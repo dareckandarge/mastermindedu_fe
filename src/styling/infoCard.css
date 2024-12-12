@@ -1,0 +1,53 @@
+/* Styling for the mentorship section */
+.howItWorks-section {
+    text-align: center;
+    background-color: #fdfbf3; /* Light cream background */
+    padding: 50px 20px;
+    margin: 4rem;
+}
+
+.howItWorks-section h2 {
+    font-size: 2rem;
+    color: #244b8a; /* Deep blue for the heading */
+    margin-bottom: 30px;
+}
+
+/* Container for the info cards */
+.howItWorks-section .info-card-container {
+    display: flex;
+    justify-content: space-evenly; /* Evenly distribute the cards horizontally */
+    align-items: flex-start; /* Align cards at the top */
+    gap: 20px; /* Add spacing between cards */
+    flex-wrap: wrap; /* Ensure cards wrap to the next line on smaller screens */
+    margin: 0 auto;
+    max-width: 1200px; /* Optional: Set a maximum width for alignment */
+}
+
+/* Styling for the InfoCard component */
+.howItWorks-section .info-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.howItWorks-section .info-card img.info-image {
+    width: 50px; /* Size of the icons */
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.howItWorks-section .info-card h3.info-description {
+    font-size: 1rem;
+    color: #244b8a; /* Deep blue text */
+    line-height: 1.5;
+    font-weight: normal;
+    margin: 0;
+}
