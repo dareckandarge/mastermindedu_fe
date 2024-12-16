@@ -30,8 +30,8 @@ export function Mentors() {
     const filtered = mentors.filter((mentor) => {
       return (
         (!language || mentor.language === language) &&
-        (!location || mentor.location === location)
-        //(!experience || mentor.experience === experience)
+        (!location || mentor.location === location) &&
+        (!experience || mentor.experience === experience)
       );
     });
     setFilteredMentors(filtered);
