@@ -6,14 +6,14 @@ import { Profile } from "../components/Profile";
 import '../App.css'
 
 const mentors = [
-  { name: "Amy Henson", language: "English", location: "New York, NY", experience: "1-3 years" },
-  { name: "John Doe", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years" },
-  { name: "Jane Smith", language: "French", location: "Austin, TX", experience: "7+ years" },
-  { name: "Amy Henson", language: "English", location: "New York, NY", experience: "1-3 years" },
-  { name: "John Doe", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years" },
-  { name: "Jane Smith", language: "French", location: "Austin, TX", experience: "7+ years" },
-  { name: "Amy Henson", language: "English", location: "New York, NY", experience: "1-3 years" },
-  { name: "John Doe", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years" },
+  { name: "Amy Henson", language: "English", location: "New York, NY", experience: "1-3 years", img: "\\AmyLi.png" },
+    { name: "Ahmed Raza", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years", img: "\\AhmedRaza.png" },
+    { name: "Ayesha Khan", language: "French", location: "Austin, TX", experience: "7+ years", img: "\\AyeshaKhan.png" },
+    { name: "Isabella Cruz", language: "English", location: "New York, NY", experience: "1-3 years", img: "\\IsabellaCruz.png" },
+    { name: "Kevin Wong", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years", img: "\\KevinWong.png" },
+    { name: "Mei-Lin Chan", language: "French", location: "Austin, TX", experience: "7+ years", img: "\\Mei-LinChan.png" },
+    { name: "Alejandro Morales", language: "English", location: "New York, NY", experience: "1-3 years", img: "\\AlejandroMorales.png" },
+    { name: "Sofia Reyes", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years", img: "\\SofiaReyes.png" },
 ];
 
 export function Mentors() {
@@ -46,7 +46,7 @@ export function Mentors() {
           filteredMentors.map((mentor, index) => (
             <div key={index} className="mentor-card">
                 <Profile 
-                    image="img goes here"
+                    image={mentor.img}
                     name={mentor.name}
                     title="Special Education Teacher"
                     organization="The Anderson School"

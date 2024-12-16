@@ -6,7 +6,17 @@ import { InfoCard } from '../components/InfoCard'
 import '../App.css';
 import '../styling/infoCard.css'
 import '../styling/homePageButtons.css'
-//import {profileImg} from '../profile_pic1.PNG'
+
+const mentors = [
+    { name: "Amy Henson", language: "English", location: "New York, NY", experience: "1-3 years", img: "\\AmyLi.png" },
+    { name: "Ahmed Raza", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years", img: "\\AhmedRaza.png" },
+    { name: "Ayesha Khan", language: "French", location: "Austin, TX", experience: "7+ years", img: "\\AyeshaKhan.png" },
+    { name: "Isabella Cruz", language: "English", location: "New York, NY", experience: "1-3 years", img: "\\IsabellaCruz.png" },
+    { name: "Kevin Wong", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years", img: "\\KevinWong.png" },
+    { name: "Mei-Lin Chan", language: "French", location: "Austin, TX", experience: "7+ years", img: "\\Mei-LinChan.png" },
+    { name: "Alejandro Morales", language: "English", location: "New York, NY", experience: "1-3 years", img: "\\AlejandroMorales.png" },
+    { name: "Sofia Reyes", language: "Spanish", location: "San Francisco, CA", experience: "4-6 years", img: "\\SofiaReyes.png" },
+];
 
 export function Home() {
     return (
@@ -27,15 +37,23 @@ export function Home() {
         <section className="profiles-section">
             <h2>Our Mentors</h2>
             <div className="profiles-container">
-                <Profile 
-                    image="img goes here"
-                    name="Amy Hensen"
-                    title="Special Education Teacher"
-                    organization="The Anderson School"
-                    languages="English, Spanish"
-                    location="New York City, NY"
-                    availability="3 sessions available"
-                />
+                {mentors.length > 0 ? (
+                    mentors.map((mentor, index) => (
+                    <div key={index} className="mentor-card">
+                        <Profile 
+                            image={mentor.img}
+                            name={mentor.name}
+                            title="Special Education Teacher"
+                            organization="The Anderson School"
+                            languages={mentor.language}
+                            location={mentor.location}
+                            availability="3 sessions available"
+                        />
+                    </div>
+                    ))
+                ) : (
+                    <p>No mentors yet.</p>
+                )}
             </div>
             <Link to="/mentors">
                 <button className="home-page-button">Meet More Mentors</button>
@@ -46,15 +64,15 @@ export function Home() {
             <h2>How Does Mentorship Work?</h2>
             <div className="info-card-container">
                 <InfoCard 
-                    image="some icon"
+                    image="\personIcon.png"
                     description="1. Teachers go on MasterMinds to find a bilingual mentor who would resonate with their students"
                 />
                 <InfoCard 
-                    image="some icon2"
+                    image="\calendarIcon.png"
                     description="2. Teachers book bilingual mentors based on their availability and subject matter"
                 />
                 <InfoCard 
-                    image="some icon3"
+                    image="\heartIcon.png"
                     description="3. Approved mentors visit classrooms virtually or in-person and connect with their students"
                 />
             </div>
@@ -64,7 +82,7 @@ export function Home() {
             {/* Section 1: Image Left, Text Right */}
             <div className="mentorship-section">
                 <img
-                src="path/to/image1.jpg"
+                src="\homepageimg3.2.png"
                 alt="Child and mentor interaction"
                 className="mentorship-image"
                 />
@@ -88,7 +106,7 @@ export function Home() {
                 </p>
                 </div>
                 <img
-                src="../../public/homeImgMain3.png"
+                src="\homeImgMain3.png"
                 alt="Teacher working with students"
                 className="mentorship-image"
                 />

@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 export function Navbar() {
     return (
       <header className="navbar">
-        <img src="path/to/logo.png" alt="MasterMinds Logo" className="logo" />
+        <Link to="/">
+          <img src="/LogoAndTitle.png" alt="MasterMinds Logo" className="logo" />
+        </Link>
         <div className="nav-buttons">
             <Link to="/login">
                 <button className="nav-button">Log In</button>
